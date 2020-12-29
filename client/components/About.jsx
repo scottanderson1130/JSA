@@ -15,7 +15,7 @@ const About = () => {
       <ul className='right'>
         <li>html & css</li>
         <li>redux</li>
-        <li>postgres</li>
+        <li>python</li>
 
       </ul>
     </div>

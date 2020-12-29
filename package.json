@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@react-pdf/renderer": "^1.6.12",
     "express": "^4.17.1",
     "nodemon": "^2.0.6",
     "react": "^17.0.1",

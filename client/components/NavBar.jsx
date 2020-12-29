@@ -21,13 +21,13 @@ const NavBar = () => {
     <div id='navcontainer'>
       <nav>
         <div className='logo'>
-          <h4>jsa</h4>
+          <a href='#'><h4>jsa</h4></a>
         </div>
         <ul className='navlinks'>
           <li><a href='#container-about'>about</a></li>
           <li><a href='#container-work'>work</a></li>
           <li><a href='#container-projects'>projects</a></li>
-          <li><a href='#'>contact</a></li>
+          <li><a href='#container-contact'>contact</a></li>
           <li><a><button>resume</button></a></li>
         </ul>
         <div className='burger' onClick={navSlide}>

@@ -13,7 +13,7 @@ button {
   font-family: 'Roboto Mono';
   padding: 10px 23px;
   border-radius: 6px;
-  background-color: #001437;
+  background: transparent;
   color: #bec2c1;
   border: 1px solid #bec2c1;
 
@@ -31,26 +31,26 @@ button:hover {
   left: 0;
 }
 nav {
-  width: 75vw;
+  width: 100vw;
   min-height: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: transparent;
-  backdrop-filter: blur(6px);
+  background-color: #001429;
 }
 
 .logo {
-  color: #bec2c1;
-  letter-spacing: 5px;
-  font-size: 30px;
   justify-content: left;
   margin-left: 40px;
   cursor: pointer;
+}
+.logo a{
+  color: #bec2c1;
+  letter-spacing: 5px;
+  font-size: 30px;
   text-decoration: none;
 }
-
-.logo:hover{
+.logo a:hover{
   color: #aaf7e4;
   cursor: pointer;
   text-decoration: none;
@@ -64,6 +64,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   width: 0%;
+  margin-right: 250px;
 }
 .navlinks li {
   text-align: center;
@@ -94,27 +95,27 @@ nav {
 
 @media screen and (max-width:1024px) {
   .navlinks {
-    width: 20%;
+    width: 5%;
   }
 }
 
 @media screen and (max-width:768px) {
   nav {
-    width: 95vw;
-    background: transparent;
+    width: 100vw;
     backdrop-filter: none;
+    
   }
   .navlinks {
     position: absolute;
     background: transparent;
     backdrop-filter: blur(3px);
-    right: 0px;
+    left: 250px;
     height: 100vh;
     top: 0vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 65%;  
+    width: 75%;  
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
@@ -130,7 +131,7 @@ nav {
   .burger {
     cursor: pointer;
     display: block;
-    margin-right: 0px;
+    margin-right: 25px;
   }
   .nav-active {
     transform: translate(0%);
@@ -166,7 +167,7 @@ nav {
 }
 
 .container-main h1{
-  font-size: 75px;
+  font-size: 70px;
   color: #aaf7e4;
   font-weight: 700;
   font-family: Montserrat, 'Courier New', Courier, monospace;
@@ -209,6 +210,7 @@ nav {
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 25px;
+  padding-bottom: 40px;
 }
 #container-about p{
   font-size: 17px;
@@ -216,6 +218,7 @@ nav {
   color: #bec2c1;
   text-decoration: none;
   letter-spacing: 1px;
+  padding-bottom: 10px;
 }
 #container-about ul{
   font-size: 17px;
@@ -223,7 +226,8 @@ nav {
   color: #bec2c1;
   list-style: none;
   letter-spacing: 1px;
-  padding: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-top: 0px;
 }
 #container-about .left{
@@ -246,6 +250,40 @@ nav {
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 25px;
+  padding-bottom: 40px;
+}
+#container-work h2{
+  font-family: Lato, 'Courier New';
+  color: #bec2c1;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+#container-work h3{
+  font-family: Lato, 'Courier New';
+  color: #bec2c1;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+#container-work h6{
+  font-family: Lato, 'Courier New';
+  color: #bec2c1;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+#container-work p{
+  font-size: 17px;
+  font-family: Lato, 'Courier New';
+  color: #bec2c1;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+#job-two {
+  margin-top:40px;
 }
 
 /*---- PROJECTS SETTINGS ----*/
@@ -262,4 +300,38 @@ nav {
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 25px;
+}
+
+#container-work{
+  margin-left: 10vw; 
+  margin-top: 400px;
+  width: 65vw;
+}
+/*---- CONTACT SETTINGS ----*/
+#container-contact{
+  text-align: center;
+  margin-top: 400px;
+  width: 100vw;
+}
+#container-contact h1{
+  color: #aaf7e4;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+
+/*---- FOOTER SETTINGS ----*/
+
+#container-footer{
+  text-align: center;
+  margin-top: 200px;
+}
+#container-footer h3{
+  color: #bec2c1;
+}
+#container-footer p{
+  color: #aaf7e4;
+  display: inline;
 }
