@@ -17,17 +17,16 @@ const NavBar = () => {
 
     burger.classList.toggle('toggle')
   }
-
   return (
-    <div className='navcontainer'>
+    <div id='navcontainer'>
       <nav>
         <div className='logo'>
-          <p4>jsa</p4>
+          <h4>jsa</h4>
         </div>
         <ul className='navlinks'>
-          <li><a href='#'>about</a></li>
-          <li><a href='#'>work</a></li>
-          <li><a href='#'>projects</a></li>
+          <li><a href='#container-about'>about</a></li>
+          <li><a href='#container-work'>work</a></li>
+          <li><a href='#container-projects'>projects</a></li>
           <li><a href='#'>contact</a></li>
           <li><a><button>resume</button></a></li>
         </ul>

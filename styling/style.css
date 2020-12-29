@@ -4,11 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #001437;
-  font-family: Montserrat, 'Roboto Mono', 'Open Sans', 'Roboto Slab',
-    Lato, monospace;
 }
-
+body {
+  background-color: #001437;
+  font-family: Montserrat, 'Courier New', Courier, monospace;
+}
 button {
   font-family: 'Roboto Mono';
   padding: 10px 23px;
@@ -25,11 +25,19 @@ button:hover {
 }
 
 /* ---- NAV BAR SETTINGS ---- */
+#navcontainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 nav {
+  width: 75vw;
+  min-height: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 8vh;
+  background: transparent;
+  backdrop-filter: blur(6px);
 }
 
 .logo {
@@ -39,25 +47,30 @@ nav {
   justify-content: left;
   margin-left: 40px;
   cursor: pointer;
+  text-decoration: none;
 }
+
 .logo:hover{
   color: #aaf7e4;
-  font-size: 275%;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .navlinks {
+  box-sizing: border-box;
+  list-style-type: none;
   display: flex;
+  min-height: 6vh;
   justify-content: space-around;
-  width: 60%;
+  align-items: center;
+  width: 0%;
 }
 .navlinks li {
-  list-style: none;
-  padding-top: 10px;
+  text-align: center;
+  padding: .5em;
+  background: transparent;
 }
-.navlinks li button{
-  margin: -10px;
-}
+
 .navlinks a:hover{
   color: #aaf7e4;
 }
@@ -81,13 +94,15 @@ nav {
 
 @media screen and (max-width:1024px) {
   .navlinks {
-    width: 65%;
+    width: 20%;
   }
 }
 
-@media screen and (max-width:720px) {
-  body {
-    overflow: hidden;
+@media screen and (max-width:768px) {
+  nav {
+    width: 95vw;
+    background: transparent;
+    backdrop-filter: none;
   }
   .navlinks {
     position: absolute;
@@ -109,10 +124,13 @@ nav {
   .navlinks li button{
     margin: 0px;
   }
+  .navlinks a{
+    background: transparent;
+  }
   .burger {
     cursor: pointer;
     display: block;
-    margin-right: 20px;
+    margin-right: 0px;
   }
   .nav-active {
     transform: translate(0%);
@@ -142,27 +160,106 @@ nav {
 
 /*---- MAIN SETTINGS ----*/
 .container-main{
-  margin: 100px;
+  margin-left: 10vw;
+  margin-top: 25vw; 
+  width: 65vw;
 }
 
 .container-main h1{
-  font-size: 6vw;
+  font-size: 75px;
   color: #aaf7e4;
   font-weight: 700;
-  font-family: Montserrat, 'Courier New', Courier, monospace
+  font-family: Montserrat, 'Courier New', Courier, monospace;
+  margin: 0px;
 }
 .container-main h4{
-  font-size: 4vw;
+  font-size: 40px;
+  margin: auto;
   color: #bec2c1;
   font-weight: lighter;
-  font-family: Lato, 'Courier New', Courier, monospace
+  font-family: Lato, 'Courier New', Courier, monospace;
+  margin-bottom: 3px;
 }
 .container-main p{
   padding-top: 7px;
-  font-size: 2vw;
+  font-size: 30px;
   color: #bec2c1;
   font-weight: lighter;
   font-family: Lato, 'Courier New', Courier, monospace
 }
 
+.about p{
+  font-size: 17px;
+  display: flex;
+  font-family: Lato, 'Courier New';
+  margin: 0px;
+}
 
+/*---- ABOUT SETTINGS ----*/
+
+#container-about{
+  margin-left: 10vw; 
+  margin-top: 400px;
+  width: 65vw;
+}
+
+#container-about h1{
+  color: #aaf7e4;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 25px;
+}
+#container-about p{
+  font-size: 17px;
+  font-family: Lato, 'Courier New';
+  color: #bec2c1;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+#container-about ul{
+  font-size: 17px;
+  font-family: Lato, 'Courier New';
+  color: #bec2c1;
+  list-style: none;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin-top: 0px;
+}
+#container-about .left{
+  float:left;
+}
+#container-about .right{
+  float:left;
+}
+
+/*---- WORK SETTINGS ----*/
+#container-work{
+  margin-left: 10vw; 
+  margin-top: 400px;
+  width: 65vw;
+}
+
+#container-work h1{
+  color: #aaf7e4;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/*---- PROJECTS SETTINGS ----*/
+#container-projects{
+  margin-left: 10vw; 
+  margin-top: 400px;
+  width: 65vw;
+  padding-bottom: 50px;
+}
+
+#container-projects h1{
+  color: #aaf7e4;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 25px;
+}
