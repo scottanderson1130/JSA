@@ -313,22 +313,54 @@ nav {
 #container-projects a:hover{
   color: #aaf7e4;
 }
+
+/* folio */
+
 .container-project{
   display: flex;
-  border: 2px solid black;
+  width: 90vw;
+  margin-bottom: 100px;
 }
 .container-project img{
-  height: 50%;
-  width: 50%;
+  max-width: 100%;
+  max-height: 100%;
 }
-.container-project a{
-  font-size: 25px;
+.container-project img:hover{
+  opacity: 25%;
+  transition: .5s ease;
 }
+
 .container-project-about{
   vertical-align: middle;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #102750;
+  width: 90vw;
+  height: 25vh;
+}
+.container-project-about h1{
+  text-align: right;
+  padding-right: 20px;
+  color: #aaf7e4;
+}
+.container-project-about.trailr h1{
+  text-align: left;
+  padding-left: 20px;
+}
+.container-project-about ul{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 .container-project-about li{
   list-style-type: none;
+  color: #ffffff;
+}
+.container-project-about p{
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
 }
 
 /*---- CAROUSEL SETTINGS ----*/
@@ -385,7 +417,7 @@ nav {
 /*---- CONTACT SETTINGS ----*/
 #container-contact{
   text-align: center;
-  margin-top: 400px;
+  margin-top: 300px;
   width: 100vw;
 }
 #container-contact h1{
