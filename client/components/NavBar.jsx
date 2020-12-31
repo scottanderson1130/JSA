@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const NavBar = () => {
 
+const NavBar = ({ clicked }) => {
   const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.navlinks');
@@ -21,13 +22,13 @@ const NavBar = () => {
     <div id='navcontainer'>
       <nav>
         <div className='logo'>
-          <a href='#'><h4>jsa</h4></a>
+          <Link to='/'><h4>jsa</h4></Link>
         </div>
         <ul className='navlinks'>
-          <li><a href='#container-about'>about</a></li>
-          <li><a href='#container-work'>work</a></li>
-          <li><a href='#container-projects'>projects</a></li>
-          <li><a href='#container-contact'>contact</a></li>
+          <li><Link to='/' onClick={clicked}>about</Link></li>
+          <li><Link to='/' onClick={clicked}>work</Link></li>
+          <li><Link to='/' onClick={clicked}>projects</Link></li>
+          <li><Link to='/' onClick={clicked}>contact</Link></li>
           <li><a><button>resume</button></a></li>
         </ul>
         <div className='burger' onClick={navSlide}>

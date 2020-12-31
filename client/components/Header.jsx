@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Main = () => {
+const Header = () => {
   return (
     <div className='container-main name'>
       <h1>james</h1>
@@ -14,4 +14,4 @@ const Main = () => {
   )
 }
 
-export default Main;
+export default Header;

@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #001437;
   font-family: Montserrat, 'Courier New', Courier, monospace;
@@ -288,7 +291,7 @@ nav {
 
 /*---- PROJECTS SETTINGS ----*/
 #container-projects{
-  margin-left: 10vw; 
+  margin-left: 6vw; 
   margin-top: 400px;
   width: 65vw;
   padding-bottom: 50px;
@@ -302,11 +305,83 @@ nav {
   font-size: 25px;
 }
 
-#container-work{
-  margin-left: 10vw; 
-  margin-top: 400px;
-  width: 65vw;
+#container-projects a{
+  text-decoration: none;
+  color: #bec2c1;
+  margin-left: 6vw; 
 }
+#container-projects a:hover{
+  color: #aaf7e4;
+}
+.container-project{
+  display: flex;
+  border: 2px solid black;
+}
+.container-project img{
+  height: 50%;
+  width: 50%;
+}
+.container-project a{
+  font-size: 25px;
+}
+.container-project-about{
+  vertical-align: middle;
+}
+.container-project-about li{
+  list-style-type: none;
+}
+
+/*---- CAROUSEL SETTINGS ----*/
+
+#folio{
+  position: absolute; 
+  margin-top: 7vh;
+  width: 65vw;
+  padding-bottom: 50px;
+}
+
+.carosuel{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide{
+  opacity: 0;
+  transition-duration: 1s ease;
+} 
+.slide.active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.image{
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.right-arrow{
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.left-arrow{
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
 /*---- CONTACT SETTINGS ----*/
 #container-contact{
   text-align: center;
