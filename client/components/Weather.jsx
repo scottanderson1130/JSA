@@ -14,7 +14,7 @@ const Weather = () => {
   }
 
   return (
-    <div id='folio'>
+    <div id='weather'>
       <div className='carousel'>
         <FaArrowCircleLeft className='left-arrow' onClick={prevSlide} />
         <FaArrowCircleRight className='right-arrow' onClick={nextSlide} />

@@ -12,26 +12,13 @@ body {
   background-color: #001437;
   font-family: Montserrat, 'Courier New', Courier, monospace;
 }
-button {
-  font-family: 'Roboto Mono';
-  padding: 10px 23px;
-  border-radius: 6px;
-  background: transparent;
-  color: #bec2c1;
-  border: 1px solid #bec2c1;
-
-}
-
-button:hover {
-  color: #aaf7e4;
-  border: 1px solid #aaf7e4;
-}
 
 /* ---- NAV BAR SETTINGS ---- */
 #navcontainer {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10; 
 }
 nav {
   width: 100vw;
@@ -83,6 +70,19 @@ nav {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
+}
+.navlinks button {
+  font-family: 'Roboto Mono';
+  padding: 10px 23px;
+  border-radius: 6px;
+  background: transparent;
+  color: #bec2c1;
+  border: 1px solid #bec2c1;
+  cursor: pointer;
+}
+.navlinks button:hover{
+  color: #aaf7e4;
+  border-color: #aaf7e4;
 }
 
 .burger {
@@ -257,7 +257,7 @@ nav {
 }
 #container-work h2{
   font-family: Lato, 'Courier New';
-  color: #bec2c1;
+  color: #f7aabe;
   text-decoration: none;
   letter-spacing: 1px;
   padding-bottom: 10px;
@@ -291,10 +291,9 @@ nav {
 
 /*---- PROJECTS SETTINGS ----*/
 #container-projects{
-  margin-left: 6vw; 
+  margin-left: 10vw; 
   margin-top: 400px;
   width: 65vw;
-  padding-bottom: 50px;
 }
 
 #container-projects h1{
@@ -303,19 +302,23 @@ nav {
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 25px;
+  padding-bottom: 40px;
 }
 
 #container-projects a{
   text-decoration: none;
   color: #bec2c1;
-  margin-left: 6vw; 
 }
-#container-projects a:hover{
+.icon {
+  font-size: 1.5rem;
+  color: #bec2c1;
+}
+.icon:hover{
   color: #aaf7e4;
+  cursor: pointer;
 }
 
 /* folio */
-
 .container-project{
   display: flex;
   width: 90vw;
@@ -324,60 +327,71 @@ nav {
 .container-project img{
   max-width: 100%;
   max-height: 100%;
+  opacity: 50%;
 }
 .container-project img:hover{
-  opacity: 25%;
-  transition: .5s ease;
+  opacity: 1;
+  transition: .5s ease-in-out;
 }
 
 .container-project-about{
   vertical-align: middle;
   margin: 10px;
   border-radius: 10px;
-  background-color: #102750;
   width: 90vw;
-  height: 25vh;
+  height: 22vh;
+  padding: 10px;
+  letter-spacing: 1px;
 }
-.container-project-about h1{
-  text-align: right;
-  padding-right: 20px;
-  color: #aaf7e4;
-}
-.container-project-about.trailr h1{
+.container-project-about h2{
   text-align: left;
-  padding-left: 20px;
+  color: #f7aabe;
+  margin-bottom: 15px;
 }
+
 .container-project-about ul{
   display: flex;
   text-align: center;
-  justify-content: space-around;
-  margin-top: 20px;
+  margin-bottom: 15px;
 }
+
 .container-project-about li{
   list-style-type: none;
-  color: #ffffff;
+  color: #bec2c1;
+  border: 1px solid #f7aabe;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 15px;
 }
 .container-project-about p{
-  color: #ffffff;
-  text-align: center;
-  padding: 25px;
+  color: #bec2c1;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 /*---- CAROUSEL SETTINGS ----*/
 
 #folio{
-  position: absolute; 
-  margin-top: 7vh;
-  width: 65vw;
-  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
 }
 
-.carosuel{
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#folio h1{
+  color: #aaf7e4;
+  margin-left: 8vw;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+#folio h2{
+  color: #f7aabe;
+  margin-left: 10vw;
+  margin-bottom: 20px;
+}
+
+.carousel{
+  margin: auto;
 }
 .slide{
   opacity: 0;
@@ -389,35 +403,72 @@ nav {
   transform: scale(1.08);
 }
 
-.image{
-  width: 50%;
-  height: 50%;
+.carousel .image{
+  height: 500px;
+  width: 235px;
   border-radius: 10px;
+  margin: auto;
 }
 
 .right-arrow{
-  top: 50%;
-  right: 32px;
   font-size: 3rem;
-  color: black;
-  z-index: 10;
+  color: #bec2c1;
   cursor: pointer;
   user-select: none;
-}
+  margin-top: 25px;
+  margin-right: 25px;
+  float: right;
+} 
 .left-arrow{
-  top: 50%;
-  left: 32px;
   font-size: 3rem;
-  color: black;
-  z-index: 10;
+  color: #bec2c1;
   cursor: pointer;
   user-select: none;
+  margin-top: 25px;
+  margin-left: 25px;
+  float: left;
+}
+
+.right-arrow:hover{
+  color: #aaf7e4;
+}
+.left-arrow:hover{
+  color: #aaf7e4;
+}
+
+.folio-description{
+  margin-top: 25px;
+  color: #bec2c1;
+  text-align: center;
+  margin-bottom: 75px;
+}
+.folio-notes{
+  color: #bec2c1;
+}
+.folio-notes ul{
+  margin-left: 13vw;
+  margin-right: 11vw;
+  margin-bottom: 25px;
+}
+.folio-notes li{
+  margin-bottom: 10px;
+}
+.folio-tech{
+  color: #bec2c1;
+}
+.folio-tech ul{
+  margin-left: 13vw;
+  margin-right: 11vw;
+  margin-bottom: 25px;
+}
+.folio-tech li{
+  margin-bottom: 5px;
 }
 
 /*---- CONTACT SETTINGS ----*/
 #container-contact{
   text-align: center;
-  margin-top: 300px;
+  margin-top: 200px;
   width: 100vw;
 }
 #container-contact h1{
@@ -428,7 +479,20 @@ nav {
   font-size: 25px;
   padding-bottom: 40px;
 }
+#container-contact button {
+  font-family: 'Roboto Mono';
+  padding: 10px 23px;
+  border-radius: 6px;
+  background: transparent;
+  color: #bec2c1;
+  border: 1px solid #bec2c1;
+  cursor: pointer;
+}
 
+#container-contact button:hover {
+  border-color: #aaf7e4;
+  color: #aaf7e4;
+}
 /*---- FOOTER SETTINGS ----*/
 
 #container-footer{
@@ -441,4 +505,7 @@ nav {
 #container-footer p{
   color: #aaf7e4;
   display: inline;
+}
+#container-footer a{
+  text-decoration: none;
 }

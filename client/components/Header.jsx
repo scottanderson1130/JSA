@@ -8,7 +8,7 @@ const Header = () => {
       <h1>anderson</h1>
       <h4>software engineer</h4>
       <div className='about'>
-        <p>someone has to build the computers that take over the world, it might as well be me.</p>
+        <p>Someone has to build the computers that take over the world, it might as well be me.</p>
       </div>
     </div>
   )
