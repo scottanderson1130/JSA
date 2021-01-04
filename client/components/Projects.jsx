@@ -12,7 +12,7 @@ const Projects = () => {
     <div id='container-projects'>
       <h1>projects.</h1>
       <div className='container-project'>
-        <Link to='/folio'><img src={folioImage} alt='Folio'></img></Link>
+        <Link to='/folio'><img src={folioImage} alt='Folio App'></img></Link>
         <div className='container-project-about'>
           <h2>folio stocks</h2>
           <p>Fantasy based stock trading app to help you learn the stock market.</p>
@@ -36,7 +36,7 @@ const Projects = () => {
           </ul>
           <FiGithub className='icon' />
         </div>
-        <Link to='/weather'><img src={trailrImage} alt='Weather'></img></Link>
+        <Link to='/weather'><img src={trailrImage} alt='Weather Component'></img></Link>
       </div>
     </div>
   )

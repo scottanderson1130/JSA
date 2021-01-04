@@ -7,6 +7,7 @@ import Folio from './components/Folio.jsx';
 import Body from './components/Body.jsx';
 import Weather from './components/Weather.jsx';
 
+
 const clicked = (e) => {
   setTimeout(() => {
     const id = document.getElementById(`container-${e.target.text}`)

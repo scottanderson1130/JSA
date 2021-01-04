@@ -5,6 +5,10 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa'
 const Weather = () => {
   const [current, setCurrent] = useState(0)
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   const nextSlide = () => {
     setCurrent(current === WeatherImages.length - 1 ? 0 : current + 1)
   }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import FolioImages from '../projects/folio/FolioImages.js'
 import { FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi'
 
@@ -12,6 +12,10 @@ const Folio = () => {
   const prevSlide = () => {
     setCurrent(current === 0 ? FolioImages.length - 1 : current - 1)
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   return (
     <div id='folio'>
