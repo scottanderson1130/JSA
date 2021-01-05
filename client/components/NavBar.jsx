@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import resume from '../projects/resume/resume.pdf'
 
 
 const NavBar = ({ clicked }) => {
@@ -29,7 +30,7 @@ const NavBar = ({ clicked }) => {
           <li><Link to='/' onClick={clicked}>work</Link></li>
           <li><Link to='/' onClick={clicked}>projects</Link></li>
           <li><Link to='/' onClick={clicked}>contact</Link></li>
-          <li><a><button>resume</button></a></li>
+          <li><a href={resume} rel='noopener' target='_blank'><button>resume</button></a></li>
         </ul>
         <div className='burger' onClick={navSlide}>
           <div className='line1'></div>

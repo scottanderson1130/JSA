@@ -26,7 +26,7 @@ const Folio = () => {
         {FolioImages.map((image, index) => {
           return (
             <div
-              className={index === current ? 'slide active' : 'slide'}>
+              className={index === current ? 'slide active' : 'slide'} key={index}>
               {index === current && (
                 <img src={image.image} alt='folio images' className='image' />
               )}
@@ -63,7 +63,7 @@ const Folio = () => {
       </div>
       <div id='container-footer'>
         <h3>built by
-        <a href='https://github.com/scottanderson1130/JSA' target='_blank'>
+        <a href='https://github.com/scottanderson1130/JSA' rel="noopener" target='_blank'>
             <p> scott anderson</p>
           </a> | 2021
       </h3>

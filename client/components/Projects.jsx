@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import folioImage from '../../client/projects/folio/image6.png';
-import trailrImage from '../../client/projects/trailr/image1.png';
+import folioImage from '../../client/projects/folio/folio6.png';
+import trailrImage from '../../client/projects/trailr/weather1.png';
 
 import { FiGithub } from 'react-icons/fi'
 
@@ -22,7 +22,7 @@ const Projects = () => {
             <li>postgresql</li>
             <li>aws</li>
           </ul>
-          <FiGithub className='icon' />
+          <a href='https://github.com/nasdaiquiri/FantasyStock' target='_blank'><FiGithub className='icon' /></a>
         </div>
       </div>
       <div className='container-project'>
@@ -34,7 +34,7 @@ const Projects = () => {
             <li>bootstrap</li>
             <li>nodejs</li>
           </ul>
-          <FiGithub className='icon' />
+          <a href='https://github.com/hanging-chads/trailr' target='_blank'><FiGithub className='icon' /></a>
         </div>
         <Link to='/weather'><img src={trailrImage} alt='Weather Component'></img></Link>
       </div>

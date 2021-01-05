@@ -20,18 +20,22 @@ module.exports = {
         use: ['babel-loader']
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
+        test: /\.(png|svg|jpg|gif|pdf)$/,
+    use: [
+      {
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]'
+        }
+      }
+    ]
       },
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'client', 'index.html')
-    })
+      template: path.resolve(__dirname, 'client', 'index.html'),
+      favicon: './client/favicon/favicon.ico'
+    }),
   ]
 };
