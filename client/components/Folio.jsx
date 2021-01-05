@@ -42,7 +42,7 @@ const Folio = () => {
       <div className='folio-notes'>
         <h2>notes.</h2>
         <ul>
-          <li>Focusing here was on the creation of a Fantasy Sport type application.</li>
+          <li>Focus here was on the creation of a Fantasy Sport type application.</li>
           <li>Learning Redux was a challenge, but I think with this type of application, it was necessary. </li>
           <li>Some of the issues that I ran into was the challenge of timing between the database and front-end. Calling the IEX API to get the updated stock price, updating the current user information based on the stock price as well as the league information, and finally re-populating the data based on calculations of bought/sold stocks. This helped to cement my understanding of Async/Await.</li>
           <li>Material UI was heavily used to save on time as this was build in 5 weeks.</li>
