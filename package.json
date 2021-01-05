@@ -28,7 +28,8 @@
   },
   "scripts": {
     "start": "nodemon server/index.js",
-    "dev": "webpack --mode development --watch"
+    "dev": "webpack --mode development --watch",
+    "prod": "webpack --mode production"
   },
   "repository": {
     "type": "git",
