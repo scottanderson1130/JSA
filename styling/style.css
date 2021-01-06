@@ -563,6 +563,14 @@ nav {
     height: 115px;
     width: 310px;
   }
+  .container-project img{
+    max-width: 80%;
+    max-height: 80%;
+    opacity: 50%;
+  }
+  .container-project-about.trailr {
+    margin-bottom: 100px;
+  }
 }
 
 @keyframes navLinkFade{

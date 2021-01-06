@@ -15,7 +15,6 @@ const Body = (props) => {
       <Work />
       <Projects />
       <Contact />
-      <Footer />
     </div>
   )
 }

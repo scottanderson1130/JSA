@@ -6,6 +6,7 @@ import NavBar from './components/NavBar.jsx';
 import Folio from './components/Folio.jsx';
 import Body from './components/Body.jsx';
 import Weather from './components/Weather.jsx';
+import Footer from './components/Footer.jsx'
 
 
 const clicked = (e) => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route exact path='/folio' component={Folio}></Route>
         <Route exact path='/weather' component={Weather}></Route>
       </Switch>
+      <Footer />
     </div>
   )
 }
